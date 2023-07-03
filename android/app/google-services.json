@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1071309727327",
+    "project_id": "loginpractica-e7628",
+    "storage_bucket": "loginpractica-e7628.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071309727327:android:1eacd5aee4c9dbffc65dea",
+        "android_client_info": {
+          "package_name": "com.example.login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1071309727327-5eonf4h18070rer6gg5oda4nnrckbp00.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1HA3sb3GhjkAk5gQLXE4ZOyEnWCfYHRQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1071309727327-5eonf4h18070rer6gg5oda4nnrckbp00.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
