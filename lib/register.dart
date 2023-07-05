@@ -9,6 +9,7 @@ class RegisterPage extends StatelessWidget{
   final TextEditingController passwordController = TextEditingController();
 
   void _registerUser(BuildContext) async {
+    WidgetsApp.debugAllowBannerOverride = false;
     try{
       UserCredential userCredential = await FirebaseAuth.instance.createUserWithEmailAndPassword(email: emailController.text, password: passwordController.text);
     }catch(e){

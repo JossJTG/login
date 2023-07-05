@@ -10,6 +10,7 @@ class ForgetPasswordPage extends StatelessWidget{
   ForgetPasswordPage({super.key});
 
   void _resetPassword (BuildContext context) async {
+    WidgetsApp.debugAllowBannerOverride = false;
     try {
       await FirebaseAuth.instance.sendPasswordResetEmail(email: emailController.text,);
     }catch (e){

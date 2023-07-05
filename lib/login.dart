@@ -1,21 +1,23 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'codelabs.dart';
 
 import 'register.dart';
 import 'forget_password.dart';
-import 'home.dart';
+//import 'home.dart';
 
 class LoginPage extends StatelessWidget {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
 
   void _loginUser (BuildContext context) async{
+    WidgetsApp.debugAllowBannerOverride = false;
     try{
       await FirebaseAuth.instance.signInWithEmailAndPassword(
       email: emailController.text,
       password: passwordController.text
       );
-      Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()),);
+      Navigator.push(context, MaterialPageRoute(builder: (context) => MyApp()),);
     }catch(e){
       print("Error: $e");
     }
